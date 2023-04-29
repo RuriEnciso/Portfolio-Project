@@ -18,10 +18,11 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin: 0 27px;
   color: #acb7c3;
+  padding: 0.5rem 0;
 }
 
 .hamburger {
@@ -41,21 +42,23 @@ nav {
   background-image: url(./images/mobile/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
   background-position-x: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .presentation {
-  margin: 0 27px;
+  margin: 0 7vw;
   text-align: center;
-  padding-top: 65px;
+  padding-top: 4rem;
 }
 
 .presentation-text {
-  margin: 15px 0;
+  margin: 1rem 0;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   text-align: center;
-  line-height: 28px;
+  line-height: 2rem;
 }
 
 .presentation > h2 {
@@ -69,7 +72,7 @@ nav {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 54px;
+  line-height: 3.2rem;
 }
 
 .dtitle {
@@ -89,7 +92,7 @@ nav {
 .circle-container {
   display: flex;
   justify-content: center;
-  padding: 70px 0;
+  padding: 3rem 0;
 }
 
 .circle-fade {
@@ -120,7 +123,7 @@ nav {
   animation: fade 2s infinite;
 }
 
-/* Defines the animation fro the fade effect */
+/* Defines the animation from the fade effect */
 @keyframes fade {
   0% {
     opacity: 0.5;
