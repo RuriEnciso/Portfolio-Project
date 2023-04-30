@@ -137,3 +137,176 @@ nav {
     opacity: 0.5;
   }
 }
+
+.recent-works {
+  margin: 0 7vw;
+}
+
+.recent-works-header {
+  margin-bottom: 4rem;
+}
+
+.recent-works-line {
+  width: 15vw;
+  height: 1vh;
+  background-color: #36b37e;
+  border-radius: 1.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, auto);
+  gap: 1rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 52% 48%;
+  background-color: #d0d9d4;
+  border-radius: 10px;
+  height: 90vh;
+}
+
+.card-image {
+  height: 16rem;
+}
+
+.card-text {
+  background-color: #ebf0ee;
+  text-align: center;
+  border-radius: 10px;
+  border: #d0d9d4 5px;
+  margin: 1px;
+}
+
+.card-title {
+  color: #3a4a42;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 0 3rem;
+}
+
+.card-tools-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+}
+
+.card-tool {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #d0d9d4;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.see-project {
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  width: 122px;
+  height: 40px;
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.about-me {
+  background-image: url(./images/mobile/illustration-\ about\ me-\ mobile.png);
+  background-repeat: no-repeat;
+  margin-bottom: 5rem;
+}
+
+.text {
+  margin: 0 7vw;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.primary-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.supporting-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
+.get-resume {
+  width: 10rem;
+  margin-top: 1rem;
+}
+
+.knowledge-cards {
+  margin: 0 7vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.knowledge-tol {
+  background-color: #ebf0ee;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.knowledge-tol > img {
+  margin-top: 1.5rem;
+}
+
+.tool-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+  margin: 0;
+}
+
+.knowledge-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.tool {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 12px;
+  width: auto;
+  height: 40px;
+  background: #fff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36b37e;
+}
