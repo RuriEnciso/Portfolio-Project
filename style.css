@@ -61,7 +61,7 @@ nav {
   line-height: 2rem;
 }
 
-.presentation > h2 {
+.presentation > h1 {
   padding: 0 3rem;
 }
 
@@ -213,7 +213,7 @@ nav {
   border-radius: 4px;
   border: none;
   width: 122px;
-  height: 40px;
+  height: 48px;
   color: #fff;
   letter-spacing: 0.03em;
   font-style: normal;
@@ -226,6 +226,8 @@ nav {
   background-image: url(./images/mobile/illustration-\ about\ me-\ mobile.png);
   background-repeat: no-repeat;
   margin-bottom: 5rem;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .text {
@@ -240,6 +242,7 @@ nav {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  margin: 0;
 }
 
 .supporting-text {
@@ -309,4 +312,11 @@ nav {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #36b37e;
+}
+
+.btn:hover {
+  background: #1e488f;
+  box-shadow: 0 8px 16px rgba(30, 72, 143, 0.24);
+  border-radius: 4px;
+  color: #fff;
 }
