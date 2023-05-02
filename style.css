@@ -231,7 +231,7 @@ nav {
 .about-me {
   background-image: url(./images/mobile/illustration-\ about\ me-\ mobile.png);
   background-repeat: no-repeat;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-flow: row wrap;
 }
@@ -327,10 +327,69 @@ nav {
   color: #fff;
 }
 
+.website-form {
+  margin: 0 7vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.imput-contact {
+  width: 100%;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6b778c;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+textarea::placeholder {
+  padding: 10px;
+}
+
+.email-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
 .footer-line {
   height: 8px;
   border-radius: 10px;
   background-color: #000;
   width: 35%;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
