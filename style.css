@@ -16,10 +16,6 @@ body {
   margin: 0 auto;
 }
 
-/* header {
-  position: fixed;
-} */
-
 nav {
   display: flex;
   justify-content: flex-end;
@@ -320,11 +316,15 @@ nav {
   color: #36b37e;
 }
 
-.btn:hover {
+.see-project:hover {
   background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   border-radius: 4px;
   color: #fff;
+}
+
+.see-project:active {
+  background: #008552;
 }
 
 .website-form {
