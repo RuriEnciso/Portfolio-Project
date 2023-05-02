@@ -16,6 +16,10 @@ body {
   margin: 0 auto;
 }
 
+/* header {
+  position: fixed;
+} */
+
 nav {
   display: flex;
   justify-content: flex-end;
