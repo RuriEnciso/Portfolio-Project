@@ -409,7 +409,6 @@ textarea::placeholder {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
-
   }
 
   nav {
@@ -447,7 +446,7 @@ textarea::placeholder {
     font-size: 48px;
     line-height: 60px;
     text-align: center;
-    letter-spacing: 0.37px
+    letter-spacing: 0.37px;
   }
 
   .presentation {
@@ -477,16 +476,15 @@ textarea::placeholder {
     background-image: url(./images/desktop/illustration-about-me-left-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:bottom;
-
-  } 
+    background-position: bottom;
+  }
 
   .aboutme-grid-right {
     background-image: url(./images/desktop/illustration-about\ me-rigth-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
-  } 
+  }
 
   .text {
     grid-column: 2;
@@ -501,7 +499,7 @@ textarea::placeholder {
     grid-template-rows: repeat(auto-fill, 1fr);
   }
 
-  .form-text{
+  .form-text {
     width: 50%;
   }
 
@@ -511,6 +509,17 @@ textarea::placeholder {
   }
 
   .email-address {
+    display: none;
+  }
+
+  .social-Icons {
+    border-top: #dfe1e6 solid 0.5px;
+    margin-top: 7rem;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+
+  .footer-line {
     display: none;
   }
 }
