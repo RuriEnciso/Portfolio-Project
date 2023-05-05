@@ -513,20 +513,20 @@ textarea::placeholder {
   .email-address {
     display: none;
   }
-}
 
-.primary-text {
-  animation-name: myanimation;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes myanimation {
-  from {
-    transform: translateX(0);
+  .recent-works-line {
+    animation-name: myanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
-
-  to {
-    transform: translateX(200px);
+  
+  @keyframes myanimation {
+    from {
+      transform: translateX(-150px);
+    }
+  
+    to {
+      transform: translateX(125px);
+    }
   }
 }
