@@ -530,7 +530,7 @@ textarea::placeholder {
   .icon,
   .footer-icons,
   .nav-menu,
-  .nav-item{
+  .nav-item {
     transition: transform 0.2s ease-in-out;
   }
 
