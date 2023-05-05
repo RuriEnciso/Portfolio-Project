@@ -503,6 +503,14 @@ textarea::placeholder {
     width: 50%;
   }
 
+  .Contact-background {
+    padding-bottom: 15rem;
+    background-image: url(./images/desktop/illustration-left-contact-form-desktop.svg), url(./images/desktop/illustration-2-contact-form-desktop.svg), url(./images/desktop/rigth-contact-form.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom left, bottom left 15%, bottom right;
+  }
+
   form {
     width: 50%;
     justify-content: flex-start;
@@ -514,12 +522,45 @@ textarea::placeholder {
 
   .footer-icons {
     border-top: #dfe1e6 solid 0.5px;
-    margin-top: 7rem;
     margin-bottom: 0;
     padding: 1rem;
   }
 
+  /* HOVER EFECTS */
+  .icon,
+  .footer-icons,
+  .nav-menu,
+  .nav-item {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .icon:hover {
+    transform: scale(1.5);
+  }
+
+  .nav-menu:hover,
+  .nav-item:hover {
+    transform: scale(1.3);
+  }
+
   .footer-line {
     display: none;
+  }
+
+  /* Animations */
+  .recent-works-line {
+    animation-name: line-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes line-animation {
+    from {
+      transform: translateX(-150px);
+    }
+
+    to {
+      transform: translateX(150px);
+    }
   }
 }
