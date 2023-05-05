@@ -547,14 +547,14 @@ textarea::placeholder {
 
   /* Animations */
   .recent-works-line {
-    animation-name: lineanimation;
+    animation-name: line-animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
   }
 
-  @keyframes lineanimation {
+  @keyframes line-animation {
     from {
-      transform: translateX(-180px);
+      transform: translateX(-150px);
     }
 
     to {
