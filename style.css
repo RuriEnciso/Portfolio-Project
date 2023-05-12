@@ -336,6 +336,7 @@ nav {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  padding-right: 1rem;
 }
 
 .imput-contact {
@@ -561,6 +562,24 @@ textarea::placeholder {
 
     to {
       transform: translateX(150px);
+    }
+  }
+
+  .knowledge-tol > img {
+    animation: float 3s ease-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
     }
   }
 }
