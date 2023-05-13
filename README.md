@@ -113,6 +113,10 @@ It is a basic responsive website made with html and css
 
 - [ Website Live Demo Link](https://rurienciso.github.io/Portfolio-Project/)
 
+- Project presentation video:
+
+[![Project presentation: video demo](https://cdn.loom.com/sessions/thumbnails/0c6936d949a14bf9baac2f48b5802d61-with-play.gif)](https://www.loom.com/share/0c6936d949a14bf9baac2f48b5802d61)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
