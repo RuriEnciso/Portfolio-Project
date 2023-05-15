@@ -416,6 +416,11 @@ textarea::placeholder {
     position: absolute;
   }
 
+  .active {
+    position: fixed;
+    z-index: 6;
+  }
+
   .hamburger.active .slide:nth-child(2) {
     opacity: 0;
   }
@@ -430,9 +435,9 @@ textarea::placeholder {
 
   .nav-menu {
     display: block;
-    position: absolute;
+    position: fixed;
     left: -100%;
-    top: 1rem;
+    top: 0%;
     gap: 0;
     flex-direction: column;
     background-color: #fff;
@@ -440,6 +445,9 @@ textarea::placeholder {
     height: 100vh;
     text-align: center;
     transition: 0.3s;
+    margin: 0;
+    padding-top: 1rem;
+    z-index: 5;
   }
 
   .nav-item {
