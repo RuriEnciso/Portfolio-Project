@@ -186,7 +186,7 @@ nav {
   height: 16rem;
 }
 
-.card-text {
+.card-description {
   background-color: #ebf0ee;
   text-align: center;
   border-radius: 10px;
@@ -238,6 +238,106 @@ nav {
   cursor: pointer;
 }
 
+/******** MODAL SECTION ********** */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin: 2vh 7vw;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-header {
+  position: relative;
+}
+
+.modal-img {
+  height: auto;
+  width: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: #ebecf0;
+}
+
+.close-button:hover {
+  background-color: #36b37f;
+  color: #fff;
+}
+
+.modal-title {
+  text-align: initial;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 0;
+}
+
+.modal-list {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding-inline-start: 1px;
+  gap: 10px;
+}
+
+.modal-lang {
+  padding: 8px;
+  text-decoration: none;
+  color: #3a4a42;
+  background-color: #ebf0ee;
+}
+
+.M-text {
+  text-align: justify;
+}
+
+.modal-btns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.live-btn img {
+  float: right;
+  margin-left: 0.5rem;
+}
+
+.source-btn {
+  width: auto;
+}
+
+.source-btn img {
+  float: right;
+  margin-left: 0.5rem;
+}
+
+/* About me section */
 .about-me {
   background-image: url(./images/mobile/illustration-\ about\ me-\ mobile.png);
   background-repeat: no-repeat;
@@ -409,8 +509,9 @@ textarea::placeholder {
   margin-top: 2rem;
 }
 
+/* modile version */
 @media screen and (max-width: 768px) {
-  /* Mobile Menu */
+  /* mobile menu */
   .hamburger {
     display: block;
     position: absolute;
@@ -517,6 +618,40 @@ textarea::placeholder {
     grid-template-rows: repeat(auto-fill, 1fr);
   }
 
+  /* MODAL dekstop version */
+  .modal-content {
+    padding: 3rem 1.5rem;
+    margin: 2vh 17vw;
+    position: relative;
+  }
+
+  .modal-header {
+    position: static;
+  }
+
+  .close-button {
+    top: 0.4rem;
+    right: 1.5rem;
+  }
+
+  .modal-elements {
+    position: relative;
+  }
+
+  .modal-title {
+    width: 60%;
+  }
+
+  .modal-btns {
+    position: absolute;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 40%;
+    top: 0;
+    right: 0;
+  }
+
+  /* about me  dekstop section */
   .about-me {
     background-image: none;
   }
