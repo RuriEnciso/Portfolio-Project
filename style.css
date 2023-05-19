@@ -342,6 +342,19 @@ nav {
   justify-content: space-between;
 }
 
+.live-btn img {
+  float: right;
+  margin-left: 0.5rem;
+}
+
+.source-btn {
+  width: auto;
+}
+
+.source-btn img {
+  float: right;
+  margin-left: 0.5rem;
+}
 
 
 

@@ -116,7 +116,7 @@ const popups = [
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-        liveLink: "https://rurienciso.github.io/Portfolio-Project/",
+        liveLink: "https://www.example.com/",
         sourceLink: "https://github.com/RuriEnciso/Portfolio-Project"
     },
 
@@ -126,7 +126,7 @@ const popups = [
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-        liveLink: "https://rurienciso.github.io/Portfolio-Project/",
+        liveLink: "https://www.example.com/",
         sourceLink: "https://github.com/RuriEnciso/Portfolio-Project"
     },
 
@@ -136,7 +136,7 @@ const popups = [
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-        liveLink: "https://rurienciso.github.io/Portfolio-Project/",
+        liveLink: "https://www.example.com/",
         sourceLink: "https://github.com/RuriEnciso/Portfolio-Project"
     },
 
@@ -146,7 +146,7 @@ const popups = [
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-        liveLink: "https://rurienciso.github.io/Portfolio-Project/",
+        liveLink: "https://www.example.com/",
         sourceLink: "https://github.com/RuriEnciso/Portfolio-Project"
     },
 
@@ -156,7 +156,7 @@ const popups = [
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-        liveLink: "https://rurienciso.github.io/Portfolio-Project/",
+        liveLink: "https://www.example.com/",
         sourceLink: "https://github.com/RuriEnciso/Portfolio-Project"
     },
 
@@ -166,7 +166,7 @@ const popups = [
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-        liveLink: "https://rurienciso.github.io/Portfolio-Project/",
+        liveLink: "https://www.example.com/",
         sourceLink: "https://github.com/RuriEnciso/Portfolio-Project"
     },
 ];
@@ -225,10 +225,10 @@ function showPopup(popupId) {
     modalParag.textContent = popup.description;
     btnLive.textContent = 'See live';
     btnSource.textContent = 'See Source';
-    aLive.href = "https://www.example.com/";
+    aLive.href = popup.liveLink;
     aLive.target = "_blank";
     aLive.rel = "noopener";
-    aSource.href = "https://github.com/RuriEnciso/Portfolio-Project";
+    aSource.href = popup.sourceLink;
     aSource.target = "_blank";
     aSource.rel = "noopener";
 
