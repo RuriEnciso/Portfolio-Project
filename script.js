@@ -108,7 +108,6 @@ projects.forEach((project) => {
 });
 
 /****************** popup window *****************/
-
 const popups = [
     {
         id: 1,
@@ -174,9 +173,9 @@ const popups = [
 /* calling the popup container */
 
 function showPopup(popupId) {
-    // Buscar el objeto del popup según el ID
+    // Find the object from pupus by id
     const popup = popups.find(popup => popup.id == popupId);
-    // Crear los elementos HTML del popup y asignar valores
+    // create elements
     const divModal = document.createElement('div');
     const divModContent = document.createElement('div');
     const divMheader = document.createElement('div');
@@ -232,7 +231,7 @@ function showPopup(popupId) {
     aSource.target = "_blank";
     aSource.rel = "noopener";
 
-    /* Append elements to modal header */
+    /* Append elements to modal container */
     divMheader.appendChild(img2);
     divMheader.appendChild(close_btn);
 
@@ -257,12 +256,13 @@ function showPopup(popupId) {
 
     divModal.appendChild(divModContent);
 
+    // append modal container to body
     document.body.appendChild(divModal)
-    // Mostrar el popup
-    // console.log(divModal)
+
+    // call modal container
     const modal = document.querySelector('.modal');
 
-    // Cambia el valor de display a "block"
+    // change the value of 'display: none' in css  to 'block'
     modal.style.display = 'block';
 
     // close popup
@@ -271,6 +271,7 @@ function showPopup(popupId) {
         modal.style.display = "none";
     });
 
+    // close pupup 
     window.addEventListener("click", (event) => {
         if (event.target === modal) {
           modal.style.display = "none";
@@ -278,82 +279,15 @@ function showPopup(popupId) {
     });
 }
 
-// get the buttons of each 
+// get the buttons of each card
 const cardButtons = document.querySelectorAll('.open-modal');
 
-// Asignar un controlador de eventos a cada botón
+// Assing a event controler to each button
 cardButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Obtener el ID del popup desde algún atributo del botón o su elemento padre
+        // get ID of popups objects
         const popupId = button.dataset.projectId;
-        console.log(popupId);
-        // Llamar a la función showPopup con el ID obtenido
+        // call the popup function with id
         showPopup(popupId);
     });
 });
-      
-
-// popups.forEach((popup) =>{
-
-
-// })
-
-    /* Create the elements */
-
-
-/*  */
-// const openModalBtn = document.getElementsByClassName("open-modal");
-// const openModalBtn = document.querySelectorAll(".open-modal");
-// const modal = document.getElementsByClassName("modal");
-// const closeModalBtn = document.querySelector(".close-button")[0];
-
-// openModalBtn.forEach((button) => {
-//     button.addEventListener('click', () => {
-//       modal.style.display = 'block';
-//     });
-// });
-
-
-// closeModalBtn.addEventListener("click", () => {
-//   modal.style.display = "none";
-// });
-
-// window.addEventListener("click", (event) => {
-//   if (event.target === modal) {
-//     modal.style.display = "none";
-//   }
-// });
-
-
-
-
-
-
-
-/*
-const openModalBtn = document.querySelectorAll(".open-modal");
-const modal = document.getElementById("modal");
-const closeModalBtn = document.getElementsByClassName("close-button")[0];
-
-openModalBtn.forEach((button) => {
-    button.addEventListener('click', () => {
-      modal.style.display = 'block';
-    });
-});
-
-// openModalBtn.addEventListener("click", () => {
-//   modal.style.display = "block";
-// });
-
-closeModalBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-window.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-});
-
-*/
-

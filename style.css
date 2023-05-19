@@ -249,38 +249,17 @@ nav {
   width: 100vw;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
-
-
-  /* 
-  display: flex
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  pointer-events: none;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw; */
 }
 
 .modal-content {
-
-  /* background-color: #fefefe;
-  margin: 20% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 600px; */
-
   background-color: #fff;
   max-width: 100%;
   height: auto;
   padding: 1rem;
   margin: 2vh 7vw;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  text-align: center; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .modal-header {
@@ -293,9 +272,6 @@ nav {
 }
 
 .modal-header .close-button {
-  /* position: absolute;
-  top: 15px;
-  right: 10px; */
   position: absolute;
   top: 20px;
   right: 20px;
@@ -304,7 +280,7 @@ nav {
   cursor: pointer;
   border: none;
   border-radius: 10px;
-  background: #EBECF0;;
+  background: #ebecf0;
 }
 
 .close-button:hover {
@@ -317,7 +293,7 @@ nav {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   margin: 0;
 }
 
@@ -332,9 +308,10 @@ nav {
 .modal-lang {
   padding: 8px;
   text-decoration: none;
+
   /* margin-right: 10px; */
-  color: #3A4A42;;
-  background-color: #EBF0EE;;
+  color: #3a4a42;
+  background-color: #ebf0ee;
 }
 
 .modal-btns {
@@ -356,8 +333,7 @@ nav {
   margin-left: 0.5rem;
 }
 
-
-
+/* About me section */
 .about-me {
   background-image: url(./images/mobile/illustration-\ about\ me-\ mobile.png);
   background-repeat: no-repeat;
@@ -529,8 +505,9 @@ textarea::placeholder {
   margin-top: 2rem;
 }
 
+/* modile version */
 @media screen and (max-width: 768px) {
-  /* Mobile Menu */
+  /* mobile menu */
   .hamburger {
     display: block;
     position: absolute;
@@ -637,6 +614,13 @@ textarea::placeholder {
     grid-template-rows: repeat(auto-fill, 1fr);
   }
 
+  /* Modal buttons dekstop version */
+  .modal-btns {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  /* about me  dekstop section */
   .about-me {
     background-image: none;
   }
