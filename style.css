@@ -271,7 +271,7 @@ nav {
   width: 100%;
 }
 
-.modal-header .close-button {
+.close-button {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -289,6 +289,7 @@ nav {
 }
 
 .modal-title {
+  text-align: initial;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -299,7 +300,7 @@ nav {
 
 .modal-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   list-style-type: none;
   padding-inline-start: 1px;
   gap: 10px;
@@ -308,10 +309,12 @@ nav {
 .modal-lang {
   padding: 8px;
   text-decoration: none;
-
-  /* margin-right: 10px; */
   color: #3a4a42;
   background-color: #ebf0ee;
+}
+
+.M-text {
+  text-align: justify;
 }
 
 .modal-btns {
@@ -614,10 +617,37 @@ textarea::placeholder {
     grid-template-rows: repeat(auto-fill, 1fr);
   }
 
-  /* Modal buttons dekstop version */
+  /* MODAL dekstop version */
+  .modal-content {
+    padding: 3rem 1.5rem;
+    margin: 2vh 17vw;
+    position: relative;
+  }
+
+  .modal-header {
+    position: static;
+  }
+
+  .close-button {
+    top: 0.4rem;
+    right: 1.5rem;
+  }
+
+  .modal-elements {
+    position: relative;
+  }
+
+  .modal-title {
+    width: 60%;
+  }
+
   .modal-btns {
-    justify-content: center;
+    position: absolute;
+    justify-content: flex-end;
     gap: 2rem;
+    width: 40%;
+    top: 0;
+    right: 0;
   }
 
   /* about me  dekstop section */

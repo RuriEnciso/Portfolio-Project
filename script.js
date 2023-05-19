@@ -193,6 +193,7 @@ function showPopup(popupId) {
     const aSource = document.createElement('a');
     const imgLive = document.createElement('img');
     const imgSource = document.createElement('img');
+    const elementsDiv = document.createElement('div');
     
         /* Add classed to the elements*/ 
     divModal.classList.add('modal');
@@ -210,6 +211,7 @@ function showPopup(popupId) {
     btnSource.classList.add('see-project', 'source-btn');
     imgSource.src = "./images/desktop/git-modal-icon.png";
     imgLive.src = "./images/desktop/live-icon.png";
+    elementsDiv.classList.add('modal-elements')
     
       /* Assing values */
     img2.src = popup.image;
@@ -250,9 +252,11 @@ function showPopup(popupId) {
     divTextBtn.appendChild(modalParag);
     divTextBtn.appendChild(divBtns);
 
+    elementsDiv.appendChild(divTitle)
+    elementsDiv.appendChild(divTextBtn)
+
     divModContent.appendChild(divMheader);
-    divModContent.appendChild(divTitle);
-    divModContent.appendChild(divTextBtn);
+    divModContent.appendChild(elementsDiv);
 
     divModal.appendChild(divModContent);
 
