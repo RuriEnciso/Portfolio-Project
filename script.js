@@ -190,6 +190,8 @@ function showPopup(popupId) {
     const divBtns = document.createElement('div');
     const btnLive = document.createElement('button');
     const btnSource = document.createElement('button');
+    const aLive = document.createElement('a');
+    const aSource = document.createElement('a');
     
         /* Add classed to the elements*/ 
     divModal.classList.add('modal');
@@ -203,8 +205,6 @@ function showPopup(popupId) {
     divTextBtn.classList.add('text-and-btns');
     modalParag.classList.add('M-text');
     divBtns.classList.add('modal-btns');
-    // const aLive = document.createElement('a');
-    // const aSource = document.createElement('a');
     btnLive.classList.add('see-project', 'live-btn');
     btnSource.classList.add('see-project', 'source-btn');
     
@@ -220,8 +220,14 @@ function showPopup(popupId) {
     });
     modalParag.textContent = popup.description;
     btnLive.textContent = 'See live';
-    btnSource.textContent = 'See Source'
-    
+    btnSource.textContent = 'See Source';
+    aLive.href = "https://www.example.com/";
+    aLive.target = "_blank";
+    aLive.rel = "noopener";
+    aSource.href = "https://github.com/RuriEnciso/Portfolio-Project";
+    aSource.target = "_blank";
+    aSource.rel = "noopener";
+
     /* Append elements to modal header */
     divMheader.appendChild(img2);
     divMheader.appendChild(close_btn);
@@ -229,8 +235,11 @@ function showPopup(popupId) {
     divTitle.appendChild(modalH3);
     divTitle.appendChild(ulModal);
 
-    divBtns.appendChild(btnLive);
-    divBtns.appendChild(btnSource);
+    aLive.appendChild(btnLive);
+    aSource.appendChild(btnSource);
+
+    divBtns.appendChild(aLive);
+    divBtns.appendChild(aSource);
 
     divTextBtn.appendChild(modalParag);
     divTextBtn.appendChild(divBtns);
