@@ -17,36 +17,42 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 /**************** Refactoring projects section ****************/
 let projects = [
     {
+        id: 1,
         title: "Multi-Post Stories Gain+Glory",
         languages: ["Ruby on Rails", "CSS", "Javascript", "HTML"],
         buttonName: "See Project"
     },
 
     {
+        id: 2,
         title: "Multi-Post Stories Gain+Glory",
         languages: ["Ruby on Rails", "CSS", "Javascript", "HTML"],
         buttonName: "See Project"
     },
 
     {
+        id: 3,
         title: "Multi-Post Stories Gain+Glory",
         languages: ["Ruby on Rails", "CSS", "Javascript", "HTML"],
         buttonName: "See Project"
     },
 
     {
+        id: 4,
         title: "Multi-Post Stories Gain+Glory",
         languages: ["Ruby on Rails", "CSS", "Javascript", "HTML"],
         buttonName: "See Project"
     },
 
     {
+        id: 5,
         title: "Multi-Post Stories Gain+Glory",
         languages: ["Ruby on Rails", "CSS", "Javascript", "HTML"],
         buttonName: "See Project"
     },
 
     {
+        id: 6,
         title: "Multi-Post Stories Gain+Glory",
         languages: ["Ruby on Rails", "CSS", "Javascript", "HTML"],
         buttonName: "See Project"
@@ -54,9 +60,9 @@ let projects = [
 ]
 
 /* The cards container */
-let cards = document.getElementById('project-cards');
+let cards = document.querySelector('.cards');
 
-/* Create 6 cards */
+/* Create cards */
 projects.forEach((project) => {
     /* Create the elements */
     let div = document.createElement('div');
@@ -72,15 +78,17 @@ projects.forEach((project) => {
     cardTextDiv.classList.add('card-description');
     h3.classList.add('card-title');
     ul.classList.add('card-tools-list');
-    button.classList.add('see-project');
+    button.classList.add('see-project', 'open-modal');
 
     /* Assing values */
     h3.textContent = project.title;
     button.textContent = project.buttonName;
+    button.dataset.projectId = project.id;
 
     /* Creating languages list */
     project.languages.forEach((language) => {
         let li = document.createElement('li')
+        li.classList.add('card-tool')
         li.textContent = language;
         ul.appendChild(li);
     });
@@ -101,9 +109,10 @@ projects.forEach((project) => {
 
 /****************** popup window *****************/
 
-let popup = [
+const popups = [
     {
-        image: "./images/mobile/popup-mobile.svg",
+        id: 1,
+        image: "./images/desktop/Snapshoot-Portfolio.svg",
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
@@ -112,7 +121,8 @@ let popup = [
     },
 
     {
-        image: "./images/mobile/popup-mobile.svg",
+        id: 2,
+        image: "./images/desktop/Snapshoot-Portfolio.svg",
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
@@ -121,7 +131,8 @@ let popup = [
     },
 
     {
-        image: "./images/mobile/popup-mobile.svg",
+        id: 3,
+        image: "./images/desktop/Snapshoot-Portfolio.svg",
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
@@ -130,7 +141,8 @@ let popup = [
     },
 
     {
-        image: "./images/mobile/popup-mobile.svg",
+        id: 4,
+        image: "./images/desktop/Snapshoot-Portfolio.svg",
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
@@ -139,7 +151,8 @@ let popup = [
     },
 
     {
-        image: "./images/mobile/popup-mobile.svg",
+        id: 5,
+        image: "./images/desktop/Snapshoot-Portfolio.svg",
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
@@ -148,14 +161,183 @@ let popup = [
     },
 
     {
-        image: "./images/mobile/popup-mobile.svg",
+        id: 6,
+        image: "./images/desktop/Snapshoot-Portfolio.svg",
         title: "Keeping track of hundreds of components",
         languages: ["HTML", "CSS", "Javascript"],
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
         liveLink: "https://rurienciso.github.io/Portfolio-Project/",
         sourceLink: "https://github.com/RuriEnciso/Portfolio-Project"
     },
-]
+];
+
+/* calling the popup container */
+
+function showPopup(popupId) {
+    // Buscar el objeto del popup según el ID
+    const popup = popups.find(popup => popup.id == popupId);
+    // Crear los elementos HTML del popup y asignar valores
+    const divModal = document.createElement('div');
+    const divModContent = document.createElement('div');
+    const divMheader = document.createElement('div');
+    const img2 = document.createElement('img');
+    const close_btn = document.createElement('button');
+    const divTitle = document.createElement('div');
+    const modalH3 = document.createElement('h3');
+    const ulModal = document.createElement('ul');
+    const divTextBtn = document.createElement('div');
+    const modalParag = document.createElement('p');
+    const divBtns = document.createElement('div');
+    const btnLive = document.createElement('button');
+    const btnSource = document.createElement('button');
+    
+        /* Add classed to the elements*/ 
+    divModal.classList.add('modal');
+    divModContent.classList.add('modal-content');
+    divMheader.classList.add('modal-header');
+    img2.classList.add('modal-img');
+    close_btn.classList.add('close-button');
+    divTitle.classList.add('title-list');
+    modalH3.classList.add('modal-title');
+    ulModal.classList.add('modal-list')
+    divTextBtn.classList.add('text-and-btns');
+    modalParag.classList.add('M-text');
+    divBtns.classList.add('modal-btns');
+    // const aLive = document.createElement('a');
+    // const aSource = document.createElement('a');
+    btnLive.classList.add('see-project', 'live-btn');
+    btnSource.classList.add('see-project', 'source-btn');
+    
+      /* Assing values */
+    img2.src = popup.image;
+    close_btn.innerHTML = '&times';
+    modalH3.textContent = popup.title;
+    popup.languages.forEach((language)=>{
+        const li2 = document.createElement('li');
+        li2.textContent = language;
+        li2.classList.add('modal-lang');
+        ulModal.appendChild(li2);
+    });
+    modalParag.textContent = popup.description;
+    btnLive.textContent = 'See live';
+    btnSource.textContent = 'See Source'
+    
+    /* Append elements to modal header */
+    divMheader.appendChild(img2);
+    divMheader.appendChild(close_btn);
+
+    divTitle.appendChild(modalH3);
+    divTitle.appendChild(ulModal);
+
+    divBtns.appendChild(btnLive);
+    divBtns.appendChild(btnSource);
+
+    divTextBtn.appendChild(modalParag);
+    divTextBtn.appendChild(divBtns);
+
+    divModContent.appendChild(divMheader);
+    divModContent.appendChild(divTitle);
+    divModContent.appendChild(divTextBtn);
+
+    divModal.appendChild(divModContent);
+
+    document.body.appendChild(divModal)
+    // Mostrar el popup
+    // console.log(divModal)
+    const modal = document.querySelector('.modal');
+
+    // Cambia el valor de display a "block"
+    modal.style.display = 'block';
+
+    // close popup
+    const closeModalBtn = document.querySelector(".close-button");
+    closeModalBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+    });
+}
+
+// get the buttons of each 
+const cardButtons = document.querySelectorAll('.open-modal');
+
+// Asignar un controlador de eventos a cada botón
+cardButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Obtener el ID del popup desde algún atributo del botón o su elemento padre
+        const popupId = button.dataset.projectId;
+        console.log(popupId);
+        // Llamar a la función showPopup con el ID obtenido
+        showPopup(popupId);
+    });
+});
+      
+
+// popups.forEach((popup) =>{
 
 
+// })
+
+    /* Create the elements */
+
+
+/*  */
+// const openModalBtn = document.getElementsByClassName("open-modal");
+// const openModalBtn = document.querySelectorAll(".open-modal");
+// const modal = document.getElementsByClassName("modal");
+// const closeModalBtn = document.querySelector(".close-button")[0];
+
+// openModalBtn.forEach((button) => {
+//     button.addEventListener('click', () => {
+//       modal.style.display = 'block';
+//     });
+// });
+
+
+// closeModalBtn.addEventListener("click", () => {
+//   modal.style.display = "none";
+// });
+
+// window.addEventListener("click", (event) => {
+//   if (event.target === modal) {
+//     modal.style.display = "none";
+//   }
+// });
+
+
+
+
+
+
+
+/*
+const openModalBtn = document.querySelectorAll(".open-modal");
+const modal = document.getElementById("modal");
+const closeModalBtn = document.getElementsByClassName("close-button")[0];
+
+openModalBtn.forEach((button) => {
+    button.addEventListener('click', () => {
+      modal.style.display = 'block';
+    });
+});
+
+// openModalBtn.addEventListener("click", () => {
+//   modal.style.display = "block";
+// });
+
+closeModalBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+*/
 

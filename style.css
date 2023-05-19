@@ -238,6 +238,113 @@ nav {
   cursor: pointer;
 }
 
+/******** MODAL SECTION ********** */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+
+  /* 
+  display: flex
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw; */
+}
+
+.modal-content {
+
+  /* background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px; */
+
+  background-color: #fff;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin: 2vh 7vw;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  text-align: center; 
+}
+
+.modal-header {
+  position: relative;
+}
+
+.modal-img {
+  height: auto;
+  width: 100%;
+}
+
+.modal-header .close-button {
+  /* position: absolute;
+  top: 15px;
+  right: 10px; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: #EBECF0;;
+}
+
+.close-button:hover {
+  background-color: #36b37f;
+  color: #fff;
+}
+
+.modal-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+  margin: 0;
+}
+
+.modal-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-inline-start: 1px;
+  gap: 10px;
+}
+
+.modal-lang {
+  padding: 8px;
+  text-decoration: none;
+  /* margin-right: 10px; */
+  color: #3A4A42;;
+  background-color: #EBF0EE;;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
 .about-me {
   background-image: url(./images/mobile/illustration-\ about\ me-\ mobile.png);
   background-repeat: no-repeat;
