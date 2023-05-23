@@ -1,140 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <title>Ruri's portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>Ruri's portfolio</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="hamburger">
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#recent-works" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="#about-me" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#website-form" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="hamburger">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#recent-works" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="#about-me" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#website-form" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <div class="content">
-            <section class="presentation">
-                <h1 class="title">Hey there. I’m Ruri.</h1>
-                <h2 class="title dtitle">I'm a software developer.</h2>
-                <p class="presentation-text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-                <ul class="social-Icons">
-                    <li class="icon"><a href=""><img src="./images/mobile/twitter.svg" alt="twitter icon"></a></li>
-                    <li class="icon"><a href=""><img src="./images/mobile/Linkedin icon.svg" alt="Linkedin icon"></a></li>
-                    <li class="icon"><a href=""><img src="./images/mobile/medium.svg" alt="medium icon"></a></li>
-                    <li class="icon"><a href=""><img src="./images/mobile/github.svg" alt="github icon"></a></li>
-                    <li class="icon"><a href=""><img src="./images/mobile/angellist.svg" alt="angellist icon"></a></li>
-                </ul>
-                <div class="circle-container">
-                    <a href="#recent-works" class="circle">
-                        <div class="circle-fade">
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </a>
-                </div> 
-            </section>
-        </div>
-
-        <section class="recent-works" id="recent-works">
-            <div class="recent-works-header">
-                <h2 class="title">My Recent works</h2>
-                <hr class="recent-works-line">
-            </div>
-            <!-- cards section -->
-            <div class="cards" id="project-cards"></div>
-        </section>
-
-        <section class="about-me" id="about-me">
-            <div class="grid-aboutme">
-                <div class="aboutme-grid-left"></div>
-                <div class="text">
-                    <h2 class="primary-text">About me</h2>
-                    <p class="supporting-text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                        don’t hesitate to contact me.</p>
-                    <button class="see-project get-resume">Get my resume</button>
-                </div>
-                <div class="aboutme-grid-right"></div>
-            </div>
-
-            <div class="knowledge-cards">
-                <div class="knowledge-tol">
-                    <img src="./images/mobile/icon-languages.svg" alt="">
-                    <h3 class="tool-title">Languages</h3>
-                    <ul class="knowledge-list">
-                        <li class="tool">JavaScript</li>
-                        <li class="tool">Ruby</li>
-                        <li class="tool">HTML</li>
-                        <li class="tool">CSS</li>
-                    </ul>
-                </div>
-                <div class="knowledge-tol">
-                    <img src="./images/mobile/icon-frameworks.svg" alt="">
-                    <h3 class="tool-title">Frameworks</h3>
-                    <ul class="knowledge-list">
-                        <li class="tool">React.js</li>
-                        <li class="tool">Ruby on Rails</li>
-                        <li class="tool">RSpec</li>
-                        <li class="tool">Capybara</li>
-                        <li class="tool">Selenium</li>
-                    </ul>
-                </div>
-                <div class="knowledge-tol">
-                    <img src="./images/mobile/icon-skills.svg" alt="">
-                    <h3 class="tool-title">Skills</h3>
-                    <ul class="knowledge-list">
-                        <li class="tool">Database Managment</li>
-                        <li class="tool">Version Control</li>
-                        <li class="tool">CLI</li>
-                        <li class="tool">Web Development</li>
-                        <li class="tool">API Design</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact form -->
-        <section class="Contact-background">
-            <div class="website-form" id="website-form">
-                <p class="form-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-                <form action="https://formspree.io/f/xqkonber" method="POST">
-                    <label for="name"></label>
-                    <input type="text" id="name" name="name" maxlength="30" class="imput-contact" placeholder="Full name" aria-label="Full name" required>
-                    <label for="mail"></label>
-                    <input type="email" id="mail" name="email" class="imput-contact" placeholder="Email address" aria-label="Email address" required>
-                    <label for="msj"></label>
-                    <textarea name="message" rows="5" maxlength="500" id="msj" placeholder="Hey I’d like to connect to..." aria-label="write your message here" required></textarea>
-                    <button class="see-project" type="submit">Get in touch</button>
-                </form>
-                <p class="email-address">myemailhere@email.com</p>
-            </div>
-        </section>
-
-    </main>
-    <footer>
-        <ul class="social-Icons footer-icons">
-            <li class="icon"><a href=""><img src="./images/mobile/twitter.svg" alt="twitter icon"></a></li>
-            <li class="icon"><a href=""><img src="./images/mobile/Linkedin icon.svg" alt="Linkedin icon"></a></li>
-            <li class="icon"><a href=""><img src="./images/mobile/medium.svg" alt="medium icon"></a></li>
-            <li class="icon"><a href=""><img src="./images/mobile/github.svg" alt="github icon"></a></li>
-            <li class="icon"><a href=""><img src="./images/mobile/angellist.svg" alt="angellist icon"></a></li>
+  <main>
+    <div class="content">
+      <section class="presentation">
+        <h1 class="title">Hey there. I’m Ruri.</h1>
+        <h2 class="title dtitle">I'm a software developer.</h2>
+        <p class="presentation-text"> I can help you build a product , feature or website Look through some of my work
+          and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+        <ul class="social-Icons">
+          <li class="icon"><a href=""><img src="./images/mobile/twitter.svg" alt="twitter icon"></a></li>
+          <li class="icon"><a href=""><img src="./images/mobile/Linkedin icon.svg" alt="Linkedin icon"></a></li>
+          <li class="icon"><a href=""><img src="./images/mobile/medium.svg" alt="medium icon"></a></li>
+          <li class="icon"><a href=""><img src="./images/mobile/github.svg" alt="github icon"></a></li>
+          <li class="icon"><a href=""><img src="./images/mobile/angellist.svg" alt="angellist icon"></a></li>
         </ul>
-        <hr class="footer-line"></hr>
-    </footer>
-    <script src="script.js"></script>
+        <div class="circle-container">
+          <a href="#recent-works" class="circle">
+            <div class="circle-fade">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <section class="recent-works" id="recent-works">
+      <div class="recent-works-header">
+        <h2 class="title">My Recent works</h2>
+        <hr class="recent-works-line">
+      </div>
+      <!-- cards section -->
+      <div class="cards" id="project-cards"></div>
+    </section>
+
+    <section class="about-me" id="about-me">
+      <div class="grid-aboutme">
+        <div class="aboutme-grid-left"></div>
+        <div class="text">
+          <h2 class="primary-text">About me</h2>
+          <p class="supporting-text"> I can help you build a product , feature or website Look through some of my work
+            and experience! If you like what you see and have a project you need coded,
+            don’t hesitate to contact me.</p>
+          <button class="see-project get-resume">Get my resume</button>
+        </div>
+        <div class="aboutme-grid-right"></div>
+      </div>
+
+      <div class="knowledge-cards">
+        <div class="knowledge-tol">
+          <img src="./images/mobile/icon-languages.svg" alt="">
+          <h3 class="tool-title">Languages</h3>
+          <ul class="knowledge-list">
+            <li class="tool">JavaScript</li>
+            <li class="tool">Ruby</li>
+            <li class="tool">HTML</li>
+            <li class="tool">CSS</li>
+          </ul>
+        </div>
+        <div class="knowledge-tol">
+          <img src="./images/mobile/icon-frameworks.svg" alt="">
+          <h3 class="tool-title">Frameworks</h3>
+          <ul class="knowledge-list">
+            <li class="tool">React.js</li>
+            <li class="tool">Ruby on Rails</li>
+            <li class="tool">RSpec</li>
+            <li class="tool">Capybara</li>
+            <li class="tool">Selenium</li>
+          </ul>
+        </div>
+        <div class="knowledge-tol">
+          <img src="./images/mobile/icon-skills.svg" alt="">
+          <h3 class="tool-title">Skills</h3>
+          <ul class="knowledge-list">
+            <li class="tool">Database Managment</li>
+            <li class="tool">Version Control</li>
+            <li class="tool">CLI</li>
+            <li class="tool">Web Development</li>
+            <li class="tool">API Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="Contact-background">
+      <div class="website-form" id="website-form">
+        <p class="form-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in
+          touch.</p>
+        <form action="https://formspree.io/f/xqkonber" method="POST">
+          <label for="name"></label>
+          <input type="text" id="name" name="name" maxlength="30" class="imput-contact" placeholder="Full name"
+            aria-label="Full name" required>
+          <label for="mail"></label>
+          <input type="email" id="mail" name="email" class="imput-contact" placeholder="Email address"
+            aria-label="Email address" required>
+          <label for="msj"></label>
+          <textarea name="message" rows="5" maxlength="500" id="msj" placeholder="Hey I’d like to connect to..."
+            aria-label="write your message here" required></textarea>
+          <button class="see-project" type="submit">Get in touch</button>
+        </form>
+        <p class="email-address">myemailhere@email.com</p>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <ul class="social-Icons footer-icons">
+      <li class="icon"><a href=""><img src="./images/mobile/twitter.svg" alt="twitter icon"></a></li>
+      <li class="icon"><a href=""><img src="./images/mobile/Linkedin icon.svg" alt="Linkedin icon"></a></li>
+      <li class="icon"><a href=""><img src="./images/mobile/medium.svg" alt="medium icon"></a></li>
+      <li class="icon"><a href=""><img src="./images/mobile/github.svg" alt="github icon"></a></li>
+      <li class="icon"><a href=""><img src="./images/mobile/angellist.svg" alt="angellist icon"></a></li>
+    </ul>
+    <hr class="footer-line">
+    </hr>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
