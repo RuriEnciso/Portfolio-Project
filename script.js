@@ -31,7 +31,7 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: '2',
     title: 'Multi-Post Stories Gain+Glory',
     languages: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     buttonName: 'See Project',
@@ -45,7 +45,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: '3',
     title: 'Multi-Post Stories Gain+Glory',
     languages: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     buttonName: 'See Project',
@@ -59,7 +59,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: '4',
     title: 'Multi-Post Stories Gain+Glory',
     languages: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     buttonName: 'See Project',
@@ -73,7 +73,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: '5',
     title: 'Multi-Post Stories Gain+Glory',
     languages: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     buttonName: 'See Project',
@@ -87,7 +87,7 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: '6',
     title: 'Multi-Post Stories Gain+Glory',
     languages: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     buttonName: 'See Project',
