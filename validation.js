@@ -20,7 +20,6 @@ function showError() {
   } else if (email.validity.tooShort) {
     // If the data is too short,
     // display the following error message.
-    emailError.textContent = `Email should be at least ${email.minLength} characters; you entered ${email.value.length}.`;
   } else if (/[A-Z]/.test(email.value)) {
     emailError.textContent = 'Entered value has to be in lower case';
   }
@@ -40,18 +39,6 @@ fullName.addEventListener('input', () => {
     showError();
   }
 });
-
-/*
-fullName.addEventListener("input", () => {
-  if (fullName.validity.valueMissing) {
-    nameError.textContent= "rellene este campo";
-  } else if(fullName.validity.patternMismatch){
-    nameError.textContent= "hola";
-  } else {
-    nameError.textContent= "";
-  }
-});
-*/
 
 email.addEventListener('input', () => {
   // Each time the user types something, we check if the
