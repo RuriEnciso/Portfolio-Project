@@ -17,9 +17,6 @@ function showError() {
     // If the field doesn't contain an email address,
     // display the following error message.
     emailError.textContent = 'Entered value needs to be an email address.';
-  } else if (email.validity.tooShort) {
-    // If the data is too short,
-    // display the following error message.
   } else if (/[A-Z]/.test(email.value)) {
     emailError.textContent = 'Entered value has to be in lower case';
   }
@@ -43,7 +40,6 @@ fullName.addEventListener('input', () => {
 email.addEventListener('input', () => {
   // Each time the user types something, we check if the
   // form fields are valid.
-
   if (email.validity.valid) {
     // In case there is an error message visible, if the field
     // is valid, we remove the error message.
