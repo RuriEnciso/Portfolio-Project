@@ -1,15 +1,15 @@
-const nameField = document.getElementById("name");
-const emailField = document.getElementById("mail");
-const messageField = document.getElementById("msj");
+const nameField = document.getElementById('name');
+const emailField = document.getElementById('mail');
+const messageField = document.getElementById('msj');
 
 const ud = {
   fullName: '',
   email: '',
-  message: ''
+  message: '',
 };
 
 window.onload = () => {
-  const data = localStorage.getItem("userData");
+  const data = localStorage.getItem('userData');
   if (data != null) {
     const obj = JSON.parse(data);
     nameField.value = obj.fullName;
@@ -19,27 +19,24 @@ window.onload = () => {
     ud.email = obj.email;
     ud.message = obj.message;
   }
-}
+};
 
 const storeData = (data) => {
   const str = JSON.stringify(data);
-  localStorage.setItem("userData", str);
-  console.log(localStorage)
-}
+  localStorage.setItem('userData', str);
+};
 
-nameField.addEventListener("change", (event) => {
+nameField.addEventListener('change', (event) => {
   ud.fullName = event.target.value;
   storeData(ud);
 });
 
-emailField.addEventListener("change", (event) => {
+emailField.addEventListener('change', (event) => {
   ud.email = event.target.value;
   storeData(ud);
 });
 
-messageField.addEventListener("change", (event) => {
+messageField.addEventListener('change', (event) => {
   ud.message = event.target.value;
   storeData(ud);
 });
-
-
