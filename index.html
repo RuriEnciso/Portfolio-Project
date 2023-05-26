@@ -116,19 +116,21 @@
       <div class="website-form" id="website-form">
         <p class="form-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in
           touch.</p>
-        <form action="https://formspree.io/f/xqkonber" method="POST">
+        <form action="https://formspree.io/f/xqkonber" method="POST" novalidate>
           <label for="name"></label>
-          <input type="text" id="name" name="name" maxlength="30" class="imput-contact" placeholder="Full name"
-            aria-label="Full name" required>
+          <input type="text" id="name" name="name" maxlength="50" class="imput-contact" placeholder="Full name"
+            aria-label="Full name" required pattern="[A-Za-zÁÉÍÓÚÑáéíóúñüÜ\s'-]+">
+          <span class="error" aria-live="polite"></span>
           <label for="mail"></label>
           <input type="email" id="mail" name="email" class="imput-contact" placeholder="Email address"
-            aria-label="Email address" required>
+            aria-label="Email address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}">
+          <span class="error" aria-live="polite"></span>
           <label for="msj"></label>
           <textarea name="message" rows="5" maxlength="500" id="msj" placeholder="Hey I’d like to connect to..."
             aria-label="write your message here" required></textarea>
           <button class="see-project" type="submit">Get in touch</button>
         </form>
-        <p class="email-address">myemailhere@email.com</p>
+        <p class="email-address">rurienciso@gmail.com</p>
       </div>
     </section>
 
@@ -145,6 +147,7 @@
     </hr>
   </footer>
   <script src="script.js"></script>
+  <script src="validation.js"></script>
 </body>
 
 </html>
